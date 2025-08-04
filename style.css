@@ -57,6 +57,27 @@ h1 {
   font-weight: 500;
   transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
 }
+2
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
 
 /* Icon styling within links */
 .link i {
@@ -68,3 +89,24 @@ h1 {
   background: #ffffff;
   color: #101010;
 }
+/* Icons for each link using emojis */
+.link:nth-of-type(1)::before {
+    content: "🎮";
+    margin-right: 8px;
+  }
+.link:nth-of-type(2)::before {
+    content: "📊";
+    margin-right: 8px;
+  }
+.link:nth-of-type(3)::before {
+    content: "🎵";
+    margin-right: 8px;
+  }
+.link:nth-of-type(4)::before {
+    content: "▶️";
+    margin-right: 8px;
+  }
+.link:nth-of-type(5)::before {
+    content: "💬";
+    margin-right: 8px;
+  }
