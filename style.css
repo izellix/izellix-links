@@ -1,26 +1,24 @@
-/* Global base styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 body {
-  margin: 0;
+  /* Dark gradient background for a minimalistic look */
+  background: linear-gradient(135deg, #0e0b16, #040408);
   font-family: 'Inter', sans-serif;
-  /* Dark background for minimalistic look */
-  background: #101010;
-  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
+  color: #ffffff;
 }
 
-/* Wrapper for content to center and constrain width */
 .container {
   width: 100%;
-  max-width: 420px;
+  max-width: 480px;
   text-align: center;
-  padding: 20px;
 }
 
-/* Avatar styling: circular and centered */
-.profile {
+.profile-img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -46,7 +44,10 @@ h1 {
 
 /* Link buttons styling */
 .link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   padding: 14px 20px;
   margin: 8px 0;
   border: 2px solid #ffffff;
@@ -55,6 +56,11 @@ h1 {
   text-decoration: none;
   font-weight: 500;
   transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Icon styling within links */
+.link i {
+  font-size: 1.2em;
 }
 
 /* Hover effect: invert colors for emphasis */
